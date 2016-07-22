@@ -52,7 +52,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body id=”skrollr-body”>
 
 <!-- Navigation
     ==========================================-->
@@ -319,15 +319,11 @@ Lively from 9:00
 <script type="text/javascript" src="js/mobile.js"></script>
 <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyANnclE-b3i_8voRezXU56_ezlhvnoMrPQ&sensor=false&extension=.js'></script>
     
-<script>
-    skrollr.init({
-        forceHeight: false,
-        smoothScrolling: true,
-        mobileCheck: function() {
-          return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
-          return false;
-      }
-    });
+
+<script type="text/javascript">
+skrollr.init({
+smoothScrolling: true,
+});
 </script>
 
 <script type="application/ld+json">
