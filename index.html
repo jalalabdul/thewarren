@@ -309,9 +309,7 @@ Lively from 9:00
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-<script type="text/javascript" src="js/contact_me.js"></script>
-<script type="text/javascript" src="js/parallax_.js"></script>
-<script type="text/javascript" src="js/skrollr_.min.js"></script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
 
 
 <!-- Javascripts
@@ -321,13 +319,16 @@ Lively from 9:00
 <script type="text/javascript" src="js/mobile.js"></script>
 <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyANnclE-b3i_8voRezXU56_ezlhvnoMrPQ&sensor=false&extension=.js'></script>
     
-
-<script type="text/javascript">
-skrollr.init({
-smoothScrolling: true,
-});
+<script>
+    skrollr.init({
+        forceHeight: false,
+        smoothScrolling: true,
+        mobileCheck: function() {
+          return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
+          return false;
+      }
+    });
 </script>
-
 
 <script type="application/ld+json">
 {
