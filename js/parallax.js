@@ -11,7 +11,7 @@ $(window).load(function(){
         });
         
         $('header').css({
-            'background-position-y' : 50 - (scroll * 100 / heightDocument) + '%'
+            'background-position-y' : 50 - (scroll * 200 / heightDocument) + '%'
         });
 
         scrollFooter(scroll, footerHeight);

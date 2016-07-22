@@ -31,15 +31,6 @@ function main() {
         target: '.navbar-default',
         offset: 80
     });
-    
-    /*====================================
-    Toggle Email Form
-    ======================================*/
-    
-    $('#toggle1').click(function() {
-	$('.toggle1').slideToggle('fast');
-	return false;
-    });
 
   	/*====================================
     WOW JS
