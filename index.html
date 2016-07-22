@@ -82,7 +82,7 @@
 
 <div id="ribbon">
     <div id="ribbon" class="hiring">
-        <a href="http://goo.gl/forms/G7G2SwpM9U" target="_blank"><img src="img/ribbon.png" alt="Join Pure Optimisation"></a>
+        <a href="http://goo.gl/forms/G7G2SwpM9U" target="_blank"><img src="img/ribbon.png" alt=""></a>
     </div>
 </div>
     
@@ -318,58 +318,6 @@ Lively from 9:00
 <script type="text/javascript" src="js/enquire.min.js"></script>
 <script type="text/javascript" src="js/mobile.js"></script>
 <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyANnclE-b3i_8voRezXU56_ezlhvnoMrPQ&sensor=false&extension=.js'></script>
-    
-
-<script type="text/javascript">
-skrollr.init({
-smoothScrolling: true,
-});
-</script>
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Organization",
-  "name" : "Pure Optimisation",
-  "url" : "http://pureoptimisation.co.uk",
-  "logo": "http://jalalabdul.github.io/pureoptimise/img/logo.png",
-  "sameAs" : [
-    "https://twitter.com/pureopt",
-    "https://www.linkedin.com/company/4808560"
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Person",
-  "name" : "Berian Reed",
-  "url" : "http://pureoptimisation.co.uk",
-  "sameAs" : [
-    "https://twitter.com/berianreed",
-    "https://uk.linkedin.com/in/berian"
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Person",
-  "name" : "Antony Robinson",
-  "url" : "http://pureoptimisation.co.uk",
-  "sameAs" : [
-    "https://twitter.com/antrobbo",
-    "https://www.linkedin.com/in/antrobbo"
-  ]
-}
-
-</script>
-
-</body>
-</html>
-
 
 <script> 
     google.maps.event.addDomListener(window, 'load', init);
@@ -377,7 +325,7 @@ smoothScrolling: true,
     function init() {
         var mapOptions = {
             center: new google.maps.LatLng(51.858301,-4.312011),
-            zoom: 3,
+            zoom: 16,
             zoomControl: true,
             disableDoubleClickZoom: true,
             mapTypeControl: false,
@@ -513,7 +461,7 @@ smoothScrolling: true,
         var mapElement = document.getElementById('map-box');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['Sego Duro', 'undefined', 'undefined', 'undefined', 'undefined', -7.977553700000001, 112.62741940000001, 'https://mapbuildr.com/assets/img/markers/hollow-pin-black.png']
+['The Warren', 'undefined', 'undefined', 'undefined', 'undefined', 51.856812, -4.309746, 'https://mapbuildr.com/assets/img/markers/hollow-pin-black.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
@@ -535,3 +483,6 @@ link = '';     }
 
 }
 </script>
+    
+</body>
+</html>

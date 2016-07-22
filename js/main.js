@@ -39,6 +39,14 @@ function main() {
 	new WOW().init();
 	//smoothScroll
 	smoothScroll.init();
+    
+    $(function() {
+     var windowWidth = $(window).width();
+     if(windowWidth > 767){
+  skrollr.init({
+  forceHeight: false
+  });
+  }});
 
 	
 }());
