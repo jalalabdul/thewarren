@@ -16,9 +16,6 @@ h4, h5 {
     font-family: 'Merriweather', sans-serif;
 	font-weight: 400;
 }
-h1 {
-	font-weight: 500;
-}
 h2 {
     color: #363636;
 	font-size: 36px;
@@ -39,10 +36,6 @@ p {
 	font-size: 13px;
     line-height: 21px;
 }
-.text-event {
-	font-family: 'Merriweather', sans-serif;
-    color: #fff;
-}
 a {
 	color: #5b777f;
 	transition: all 0.5s;
@@ -51,7 +44,7 @@ strong {
     color: #b88b4c;
 }
 sup {
-    font-size: .5em;
+    font-size: .6em;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -98,11 +91,6 @@ i {
 .text-center {
     padding: 5em;
 }
-#events-section h1 {
-    font-size: 48px;
-    font-weight: 300;
-    color: #b88b4c;
-}
 
 .zoomimg-wrapper {
     overflow: hidden;
@@ -123,16 +111,12 @@ i {
 
 .zoomimg:hover { transform:scale(1.1) }
 
-.cafe {
+.food {
     background-image: url('../img/cafe.jpg');
 }
 
-.restaurant {
+.drink {
     background-image: url('../img/restaurant.jpg');
-}
-
-.bar {
-    background-image: url('../img/bar.jpg');
 }
 
 .supplier {
@@ -196,7 +180,7 @@ hr {
 }
 #menu.navbar-default {
 	background-color: rgba(248, 248, 248, 0);
-    border-bottom: 1px solid rgba(184, 139, 76, .5);
+    border-bottom: 0px solid rgba(184, 139, 76, .5);
 }
 #menu a.navbar-brand {
 	font-size: 22px;
@@ -266,53 +250,16 @@ hr {
     border: none;
 }
 /* Home Style */
-.bcg {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-}
-
-.hsContainer {
-	width: 100%;
-	min-height: 720px;
-	overflow: hidden;
-	position: relative;
-}
-
-.hsContent {
-	position: absolute;
-    top: 40%;
-	left: 50%;
-    transform: translate(-50%, -20%);
-    text-align: center;
-}
-	.hsContent p  {
-		color: #eaeaea;
-		padding: 10px 5px;
-		font-size: 21px;
-	}
-	.hsContent a {
-		color: #b2b2b2;
-		text-decoration: underline;
-	}
-	.hsContent img {
-        width: 350px;
-	}
 
 /* hero-bg */
-#slide-1 .bcg {background-image:
-            /* top, transparent red */ 
-        linear-gradient(
-          rgba(0, 0, 0, 0.5), 
-          rgba(0, 0, 0, 0.5)
-        ),
-        /* bottom, image */
-    url('../img/hero-bg.jpg')}
-#slide-1 .hsContent {
-	top: 200px;
+header {
+    height: 100%;
+    background: #363636 url(../img/noise.png);
+    z-index: -1;
+}
+header img {
+    width: 400px;
+    margin: 50px auto;
 }
 header p {
     font-family: 'Merriweather';
@@ -347,7 +294,7 @@ header p {
 .btn-default {
 	color: #294d57;
 	font-family: 'Merriweather', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
 	background-color: #f1c40f;
 	margin: 0 8px;
 	font-size: 18px;
@@ -373,7 +320,6 @@ header p {
     z-index:5;
 }
 #msgErreur > div {
-    background-image: url('../img/about_us_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
@@ -567,14 +513,14 @@ img.img-circle.team-img {
 .owl-theme .owl-controls .owl-page.active span {
 	background: #f1c40f;
 }
-/* events Section */
-#events-section {
+/* Event Section */
+#event-section {
     padding: 0 0 30px 0;
 	background: 
         /* top, transparent red */ 
         linear-gradient(
-          rgba(0, 0, 0, 0.7), 
-          rgba(0, 0, 0, 0.7)
+          rgba(0, 0, 0, 0.9), 
+          rgba(0, 0, 0, 0.9)
         ),
         /* bottom, image */
         url(../img/events-bg.jpg);
@@ -582,19 +528,75 @@ img.img-circle.team-img {
 	background-attachment: fixed;
 	color: #f3f3f3;
 }
-#events-section h2 {
+#event-section h2 {
 	color: #fff;
 }
-#events-section .event-item {
-    padding: 0 50px 20px 50px;
+#event-section .event-item .btn {
+	margin-top: 20px;
 }
-#events-section .event-item .btn {
-	margin-top: 10px;
-}
-
-#events-section .item h3 {
+#event-section .item h3 {
     color: #1cb2df;
 }
+#event-section li {
+    text-decoration: none;
+}
+
+#event-section i {
+    color: #fff;
+}
+#event-section .event-date, .event-title {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#event-section .event-date {
+    text-align: center;
+    margin-right: 15px;
+}
+#event-section .event-title {
+    text-align: left;
+    margin-left: 15px;
+    line-height: 10px;
+}
+.vertical-line {
+    width: 1px;
+    height: 40px;
+    background: #fff;
+    display: inline-block;
+}
+.event-img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url(../img/events-bg.jpg);
+    background-size: cover;
+}
+.event-img p {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    background: rgba(0, 0 ,0, .8);
+    text-align: left;
+    padding: 20px 20px;
+}
+.event-text {
+	font-family: 'Merriweather', sans-serif;
+    color: #fff;
+}
+.carousel-control {
+    background: transparent !important;
+}
+.carousel-control {
+    height: auto;
+    display: inline-block;
+    top: 50%;
+    z-index: 5;
+}
+.carousel-control i {
+    background: transparent !important;
+}
+
 
 /* Contact Section */
 #contact-section {
@@ -658,16 +660,19 @@ label {
 	color: #032731;
 }
 .btn {
+    margin-top: 20px;
     background: transparent;
-    border: 2px solid #b88b4c;
-	color: #fff;
+    border: 1px solid #b88b4c;
+    border-radius: 50px;
+	color: #b88b4c;
 	font-size: 14px;
     font-weight: 500;
 	transition: all 0.5s;
+    text-transform: uppercase;
 }
 .btn:hover, #contact-section .btn:focus {
     background: #b88b4c;
-    border: 2px solid #b88b4c;
+    border: 1px solid #b88b4c;
 	color: #fff;
 }
 #contact-section .text-danger {
@@ -728,13 +733,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     height: 40px;
     width: 40px;
     margin-left: 5px;
-    color: #fff;
-    padding: 14px;
-    background: rgba(184, 139, 76, .2);
+    color: #b88b4c;
+    padding: 12px;
+    border: 2px solid #b88b4c;
     border-radius: 100%;
 }
 .socials i:hover {
-        background: rgba(184, 139, 76, 1);
+    background: #b88b4c;
+    color: #fff;
 }
 .award-logo {
     padding-top: 30px;
@@ -761,6 +767,24 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     width:87px;
     height:125px;
     transition: all 0.5s;
+}
+
+.go-top {
+    z-index: 200;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #b88b4c;
+    border-radius: 100%;
+    padding: 17px 19px;
+    transition: all 0.5s;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.go-top i {
+    color: #fff;
 }
 
 .signup {
@@ -867,18 +891,15 @@ label {
 #team-section .item {
     padding: 0 0px;
 }
-#events-section .event-item {
-    padding-bottom: 50px;
-}
     
 .navbar .navbar-default, .navbar-collapse {
     text-align: center;
 }
 #about-section .text-center {
-    padding: 150px 50px 50px 50px;
+    padding: 50px;
 }
 #div2 { 
-    margin: 150px auto;
+    margin: 50px auto;
     width : 250px;
     height: 250px;
 }
