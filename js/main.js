@@ -32,6 +32,10 @@ function main() {
         offset: 80
     });
     
+    /*====================================
+    Scroll to Top Button
+    ======================================*/
+    
     $(document).ready(function() {
             // Show or hide the sticky footer button
             $(window).scroll(function() {
@@ -46,7 +50,7 @@ function main() {
             $('.go-top').click(function(event) {
                 event.preventDefault();
 
-                $('html, body').animate({scrollTop: 0}, 300);
+                $('html, body').animate({scrollTop: 0}, 900);
             })
         });
 

@@ -56,9 +56,6 @@ a:hover, a:focus {
 ul, ol {
 	list-style: none;
 }
-i {
-    padding-right: 2px 5px;
-}
 .small {
     font-size: 14px;
 }
@@ -89,7 +86,7 @@ i {
   padding-left: 0;
 }
 .text-center {
-    padding: 5em;
+    padding: 10%;
 }
 
 .zoomimg-wrapper {
@@ -237,7 +234,6 @@ hr {
 }
 .navbar-toggle {
     border: none;
-    float: left;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #b88b4c;
@@ -249,27 +245,45 @@ hr {
 	background-color: #fff;
     border: none;
 }
-/* Home Style */
 
 /* hero-bg */
-header {
-    height: 100%;
+.hero-wrapper {
     background: #363636 url(../img/noise.png);
-    z-index: -1;
+    min-height: 100vh;
 }
-header img {
-    width: 400px;
-    margin: 50px auto;
-}
-header p {
+.hero-wrapper p {
     font-family: 'Merriweather';
-	font-size: 21px;
     text-align: center;
 	color: #eaeaea;
-    line-height: 36px;
     font-weight: 300;
 }
+.hero-wrapper img {
+    height: 250px;
+    margin: 0 auto;
+}
+.hero-content {
+  top: 50%;
+  transform: translateY(25%);
+}
 
+.hero-content p {
+    font-size: 12px;
+    padding: 0 30px;
+}
+.hero-content i {
+    color: #b88b4c !important;
+}
+.hero-content .btn {
+    font-size: 12px;
+    padding: 5px 20px;
+    text-transform: none;
+}
+.hero-content .tagline {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 36px;
+    font-family: 'Mr De Haviland', cursive;
+}
 .intro-text {
 	position: relative;
     text-align: left;
@@ -297,7 +311,6 @@ header p {
     font-weight: 300;
 	background-color: #f1c40f;
 	margin: 0 8px;
-	font-size: 18px;
 	transition: all 0.5s;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
@@ -420,9 +433,6 @@ header p {
 	color: #f3ca27;
 	padding-right: 5px;
 }
-#about-section .text-center {
-    padding: 230px 50px 50px 50px;
-}
 
 /* Client Section */
 #clients-section {
@@ -516,16 +526,7 @@ img.img-circle.team-img {
 /* Event Section */
 #event-section {
     padding: 0 0 30px 0;
-	background: 
-        /* top, transparent red */ 
-        linear-gradient(
-          rgba(0, 0, 0, 0.9), 
-          rgba(0, 0, 0, 0.9)
-        ),
-        /* bottom, image */
-        url(../img/events-bg.jpg);
-	background-size: cover;
-	background-attachment: fixed;
+    background: #363636 url(../img/noise.png);
 	color: #f3f3f3;
 }
 #event-section h2 {
@@ -567,8 +568,6 @@ img.img-circle.team-img {
     position: relative;
     width: 100%;
     height: 400px;
-    background: url(../img/events-bg.jpg);
-    background-size: cover;
 }
 .event-img p {
     position: absolute;
@@ -579,6 +578,18 @@ img.img-circle.team-img {
     background: rgba(0, 0 ,0, .8);
     text-align: left;
     padding: 20px 20px;
+} 
+.event1 {
+    background: url(../img/events-bg.jpg);
+    background-size: cover;
+}
+.event2 {
+    background: url(../img/events-bg.jpg);
+    background-size: cover;
+}
+.event3 {
+    background: url(../img/events-bg.jpg);
+    background-size: cover;
 }
 .event-text {
 	font-family: 'Merriweather', sans-serif;
@@ -588,13 +599,15 @@ img.img-circle.team-img {
     background: transparent !important;
 }
 .carousel-control {
-    height: auto;
-    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
     top: 50%;
     z-index: 5;
 }
 .carousel-control i {
-    background: transparent !important;
+    padding: inherit;
 }
 
 
@@ -665,10 +678,13 @@ label {
     border: 1px solid #b88b4c;
     border-radius: 50px;
 	color: #b88b4c;
-	font-size: 14px;
+	font-size: 12px !important;
     font-weight: 500;
 	transition: all 0.5s;
     text-transform: uppercase;
+    padding-left: 35px;
+    padding-right: 35px;
+    letter-spacing: .5px;
 }
 .btn:hover, #contact-section .btn:focus {
     background: #b88b4c;
@@ -709,13 +725,23 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 #footer {
     padding: 50px 0 50px 0;
     width: 100%;
-	background: #363636 url(../img/noise.png);
+	background: 
+        /* top, transparent red */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.9), 
+          rgba(0, 0, 0, 0.9)
+        ),
+        /* bottom, image */
+        url(../img/events-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
 	color: #eaeaea;
 	text-align: left;
 }
 
 .footer-brand {
-    width: 96px;
+    width: 64px;
     margin: 0 auto;
 }
 
@@ -725,17 +751,23 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 .socials {
+    padding-top: 30px;
 	color: #b4bbc2;
+	text-align: center;
+}
+
+.contact {
 	text-align: right;
 }
 
 .socials i {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     margin-left: 5px;
+    margin-right: 5px;
     color: #b88b4c;
-    padding: 12px;
-    border: 2px solid #b88b4c;
+    padding: 8px;
+    border: 1px solid #b88b4c;
     border-radius: 100%;
 }
 .socials i:hover {
@@ -752,12 +784,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   margin: 0;
   padding: 0;
 }
-
-.fa {
-    padding-right: 5px;
-    margin: 0;
-    color: #c00069;
-}
 .hiring {
     z-index:200;
     position:fixed;
@@ -772,21 +798,45 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .go-top {
     z-index: 200;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    opacity: .5;
+    bottom: 25px;
+    right: 25px;
     width: 50px;
     height: 50px;
     background: #b88b4c;
     border-radius: 100%;
-    padding: 17px 19px;
     transition: all 0.5s;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 4em;
+
 }
 
 .go-top i {
     color: #fff;
 }
 
+.go-top:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.go-down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 2.2em;
+}
+
+.go-down i {
+    color: #fff;
+}
 .signup {
     background: #b88b4c;
     z-index:99999;
@@ -831,7 +881,6 @@ element.style {
     height: auto;
     padding: 0 10px;
 }
-
 .navbar-collapse {
     height: auto;
 }
@@ -859,6 +908,9 @@ label {
     color: #fff;
     text-align: center;
     padding: 10px 0 10px 0;
+}
+.contact {
+    text-align: center;
 }
 #services-section .section-title h3 {
     padding: 0 20px;
@@ -914,10 +966,13 @@ label {
     text-align: center;
 }
 .socials {
+    padding-bottom: 50px;
+    padding-top: 0;
     text-align: center;
 }
 .footer-brand {
-    margin: 50px auto;
+    width: 52px;
+    margin: 30px auto;
 }
 }
 #supplier-section {
@@ -952,9 +1007,6 @@ text-align: center;
     font-size: 48px;
     line-height: 48px;
 }
-#about-section .text-center {
-    padding: 100px 50px 50px 50px;
-}
 #div2 { 
     margin: 50px auto;
     width : 250px;
@@ -976,11 +1028,10 @@ text-align: center;
 .footer-brand {
     margin: 50px auto;
 }
-}
-
-@media (min-width: 1280px) {
-.intro-text H1 {
-    padding-right: 150px;
+.socials {
+    padding-top: 0;
+	color: #b4bbc2;
+	text-align: center;
 }
 }
 
@@ -989,9 +1040,10 @@ text-align: center;
 }
 
     #map-box {
-        height: 400px;
+        height: 350px;
         width: 100%;
     }
+
     .gm-style-iw * {
         display: block;
         width: 100%;
