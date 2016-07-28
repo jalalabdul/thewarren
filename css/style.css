@@ -432,6 +432,21 @@ hr {
 	padding-right: 5px;
 }
 
+#about-section .btn {
+    padding: 5px 20px;
+    font-size: 10px !important;
+}
+#about-section i {
+    margin-right: 10px;
+}
+#about-section .btn {
+    color: #fff;
+    background: #b88b4c;
+    margin-right: 10px;
+}
+
+
+
 /* Client Section */
 #clients-section {
 	padding: 80px 0;
@@ -796,7 +811,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .go-top {
     z-index: 200;
     position: fixed;
-    opacity: .5;
     bottom: 25px;
     right: 25px;
     width: 50px;
