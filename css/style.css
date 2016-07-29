@@ -851,6 +851,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     transition: all 0.5s;
     text-align: center;
     line-height: 4em;
+	visibility: hidden;
 
 }
 
@@ -1097,12 +1098,6 @@ text-align: center;
     .gm-style-iw a {
         color: #4272db;
     }
-
-.powered_by {
-    display: none !important;
-    opacity: 0;
-    visibility: hidden;
-}
 
 #event-section {
 	padding-top: 30px;
