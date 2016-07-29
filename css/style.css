@@ -444,6 +444,9 @@ hr {
     background: #b88b4c;
     margin-right: 10px;
 }
+#about-section .powered_by {
+    display: none !important;
+}
 
 .demoFeed {
 	list-style: none;
@@ -1077,6 +1080,17 @@ text-align: center;
         color: #4272db;
     }
 
-#instagram img {
-    width: 100%
+.powered_by {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (max-width: 767px) {
+    #myCarousel {
+        .item { 
+            display:block;
+            padding-bottom:10px;
+        }
+    }
 }
