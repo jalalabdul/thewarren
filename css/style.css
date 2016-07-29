@@ -437,13 +437,23 @@ hr {
     font-size: 10px !important;
 }
 #about-section i {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 #about-section .btn {
     color: #fff;
     background: #b88b4c;
     margin-right: 10px;
 }
+
+.demoFeed {
+	list-style: none;
+	min-height: 300px;
+	overflow: hidden; }
+
+	.demoFeed li {
+		float: left;
+		margin: 0 2px;
+	}
 
 
 
@@ -1066,3 +1076,7 @@ text-align: center;
     .gm-style-iw a {
         color: #4272db;
     }
+
+#instagram img {
+    width: 100%
+}
