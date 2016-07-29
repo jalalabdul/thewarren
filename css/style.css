@@ -93,6 +93,11 @@ ul, ol {
     overflow: hidden;
 }
 
+.divider {
+	display: inline-block;
+	height: 100px;
+}
+
 .zoomimg {
     height: 370px;
     background-size: cover;
@@ -117,34 +122,41 @@ ul, ol {
 }
 
 .supplier {
-    height: 370px;
-    margin-bottom: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
+	margin-bottom: 20px;
 }
 
 .supplier-item {
-    padding-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: auto;
 }
 
 .supplier-item p {
     padding: 0 80px 0 80px;
 }
 
-#supplier-section {
-    padding: 0 50px 50px 50px;
-}
-
 .supplier1 {
-    background-image: url('../img/gambar.jpg');
+    background-image: url('../img/suppliers/coaltown_coffee.jpg');
 }
 
 .supplier2 {
-    background-image: url('../img/gambar.jpg');
+    background-image: url('../img/suppliers/lampeter_bakehouse.jpg');
 }
 
 .supplier3 {
     background-image: url('../img/gambar.jpg');
+}
+
+.supplier-item .overlay h5 {
+    position: absolute;
+    bottom: 10px;
+    left: auto;
+    text-align: center;
+    vertical-align: bottom;
+    background: #b88b4c;
+    padding: 20px;
+    color: #fff;
 }
 
 #status {
@@ -262,7 +274,8 @@ hr {
     margin: 0 auto;
 }
 .hero-content {
-    padding-top: 128px;
+    padding-top: 150px;
+	padding-bottom: 100px;
 }
 .hero-content p {
     font-size: 12px;
@@ -444,9 +457,6 @@ hr {
     background: #b88b4c;
     margin-right: 10px;
 }
-#about-section .powered_by {
-    display: none !important;
-}
 
 .demoFeed {
 	list-style: none;
@@ -571,6 +581,9 @@ img.img-circle.team-img {
 #event-section i {
     color: #fff;
 }
+#event-section h2 {
+    font-size: 21px;
+}
 #event-section .event-date, .event-title {
     display: inline-block;
     margin-bottom: 20px;
@@ -584,6 +597,10 @@ img.img-circle.team-img {
     margin-left: 15px;
     line-height: 10px;
 }
+#event-section .btn {
+    margin-bottom: 20px;
+}
+
 .vertical-line {
     width: 1px;
     height: 40px;
@@ -606,11 +623,11 @@ img.img-circle.team-img {
     padding: 20px 20px;
 } 
 .event1 {
-    background: url(../img/events-bg.jpg);
+    background: url(../img/events/jazz.jpg);
     background-size: cover;
 }
 .event2 {
-    background: url(../img/events-bg.jpg);
+    background: url(../img/events/folk.jpg);
     background-size: cover;
 }
 .event3 {
@@ -621,14 +638,15 @@ img.img-circle.team-img {
 	font-family: 'Merriweather', sans-serif;
     color: #fff;
 }
+.carousel-inner {
+        background: #3d3d3d;
+}
 .carousel-control {
     background: transparent !important;
 }
 .carousel-control {
-    border: 1px solid #fff;
-    border-radius: 100%;
-    height: 30px;
-    width: 30px;
+    height: 80px;
+    width: 80px;
     top: 50%;
     z-index: 5;
 }
@@ -1086,11 +1104,12 @@ text-align: center;
     visibility: hidden;
 }
 
-@media (max-width: 767px) {
-    #myCarousel {
-        .item { 
-            display:block;
-            padding-bottom:10px;
-        }
-    }
+#event-section {
+	padding-top: 30px;
+	padding-bottom: 80px;
+}
+
+#supplier-section {
+	padding-top: 30px;
+	padding-bottom: 80px;
 }
