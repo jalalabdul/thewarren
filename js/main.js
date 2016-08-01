@@ -53,22 +53,8 @@ function main() {
                 $('html, body').animate({scrollTop: 0}, 900);
             })
         });
-    
-        var divsToHide = document.getElementsByClassName(".powered_by");
-
-    for(var i = 0; i < divsToHide.length; i++)
-    {
-    divsToHide[i].style.visibility="hidden";
-    }
 	
-function hide(obj) {
-
-    var el = document.getElementById(obj);
-
-        el.style.display = 'none';
-
-}
-
+	
   	/*====================================
     WOW JS
     ======================================*/	

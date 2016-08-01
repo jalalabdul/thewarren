@@ -97,7 +97,7 @@ ul, ol {
 }
 
 .zoomimg {
-    height: 370px;
+    height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -121,6 +121,10 @@ ul, ol {
 
 #about-section .text-center {
 	padding: 5em;
+}
+
+.about {
+    background-image: url('../img/about.jpg');
 }
 
 .food {
@@ -189,12 +193,16 @@ hr {
 }
 #menu.navbar-default {
 	background-color: rgba(248, 248, 248, 0);
-    border-bottom: 0px solid rgba(184, 139, 76, .5);
+    border-bottom: none;
+}
+.navbar {
+  border: none;
 }
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
+	border: none;
 }
 .navbar .navbar-collapse {
   text-align: center;
@@ -216,7 +224,6 @@ hr {
     font-weight: 700;
 	letter-spacing: 1px;
     position: relative;
-    padding-bottom: 2px;
 }
 
 #menu.navbar-default .navbar-nav > li > a:hover {
@@ -257,17 +264,8 @@ hr {
 
 /* hero-bg */
 .hero-wrapper {
-	background: 
-        /* top, transparent red */ 
-        linear-gradient(
-          rgba(0, 0, 0, 0.7), 
-          rgba(0, 0, 0, 1)
-        ),
-        /* bottom, image */
-        url(../img/events-bg.jpg);
-    min-height: 100vh;
+background: #363636 url(../img/noise.png);
 	background-position: center;
-	background-size: cover;
 	background-attachment: fixed;
 }
 .hero-wrapper p {
@@ -279,6 +277,7 @@ hr {
 .hero-wrapper img {
     height: 350px;
     margin: 0 auto;
+	padding-bottom: 20px;
 }
 .hero-content {
     padding-top: 100px;
@@ -365,7 +364,7 @@ hr {
 
 
 #div2 { 
-    margin: 200px 0 200px;
+	margin: 150px auto;
     width : 300px;
     height: 300px;
     background-image: url('../img/about_us_2.jpg');
@@ -379,12 +378,13 @@ hr {
     z-index:5;
 }
 #msgErreur > div {
+	background-image: url('../img/about_us_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     position: relative;
     top: -60px;
-    left: 200px;
+    left: -60px;
     width : 250px;
     height : 250px;
     
@@ -463,7 +463,6 @@ hr {
 
 /* About Section */
 #about-section {
-    background: #ededed url(../img/noise.png);
 }
 #about-section h4 {
 	color: #81969c;
@@ -479,18 +478,8 @@ hr {
 	color: #f3ca27;
 	padding-right: 5px;
 }
-
-#about-section .btn {
-    padding: 5px 20px;
-    font-size: 10px !important;
-}
 #about-section i {
     margin-right: 5px;
-}
-#about-section .btn {
-    color: #fff;
-    background: #b88b4c;
-    margin-right: 10px;
 }
 
 .demoFeed {
@@ -1029,9 +1018,6 @@ label {
 .navbar .navbar-default, .navbar-collapse {
     text-align: center;
 }
-#about-section .text-center {
-    padding: 50px;
-}
 #div2 { 
     margin: 50px auto;
     width : 250px;
@@ -1058,6 +1044,17 @@ label {
 }
 .contact-section {
 	padding-top: 30px;
+}
+#food-section .text-center {
+	padding: 3em;
+}
+
+#drink-section .text-center {
+	padding: 3em;
+}
+
+#about-section .text-center {
+	padding: 3em;
 }
 }
 
@@ -1087,7 +1084,7 @@ label {
     line-height: 48px;
 }
 #div2 { 
-    margin: 50px auto;
+    margin: 100px auto;
     width : 250px;
     height: 250px;
 }
@@ -1116,8 +1113,8 @@ label {
     width: 100%;
     text-align: center;
 } 
-.hero-wrapper img {
-    height: 250px;
+.hero-wrapper .logo {
+    height: 200px;
     margin: 0 auto;
 }
 }
@@ -1151,4 +1148,36 @@ label {
 #supplier-section {
 	padding-top: 30px;
 	padding-bottom: 80px;
+}
+
+/* Overline From Center */
+.hvr-overline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-overline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  top: 0;
+  background: #fff;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
+  left: 0;
+  right: 0;
 }
