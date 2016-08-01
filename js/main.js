@@ -1,9 +1,4 @@
-function main() {
-
-(function () {
-   'use strict';
-
-  	$('a.page-scroll').click(function() {
+	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -54,17 +49,6 @@ function main() {
             })
         });
 
-    $(document).ready(function() {
-            // Show or hide the sticky footer button
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 200) {
-                    $('.navbar-brand').fadeIn(200);
-                } else {
-                    $('.navbar-brand').fadeOut(200);
-                }
-            });
-        });
-	
   	/*====================================
     WOW JS
     ======================================*/	
@@ -80,10 +64,3 @@ function main() {
   forceHeight: false
   });
   }});
-
-	
-}());
-
-
-}
-main();
