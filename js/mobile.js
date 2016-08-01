@@ -28,4 +28,4 @@ Toggle "hvr-overline-from-center" class
 $(window).on('resize', function () {
 	$('.page-scroll').toggleClass('hvr-overline-from-center', $(window).width() > 768);
 
-}).trigger('resize')
+}).trigger('resize');

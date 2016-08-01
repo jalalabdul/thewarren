@@ -53,7 +53,17 @@ function main() {
                 $('html, body').animate({scrollTop: 0}, 900);
             })
         });
-	
+
+    $(document).ready(function() {
+            // Show or hide the sticky footer button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 200) {
+                    $('.navbar-brand').fadeIn(200);
+                } else {
+                    $('.navbar-brand').fadeOut(200);
+                }
+            });
+        });
 	
   	/*====================================
     WOW JS
