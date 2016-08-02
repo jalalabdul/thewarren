@@ -60,6 +60,9 @@ ul, ol {
 .small {
     font-size: 14px;
 }
+.badge {
+	background: #9b7540;
+}
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -160,14 +163,24 @@ ul, ol {
     background-size: cover;
     height: 300px;
     width: auto;
+	border-radius: 5px;
 }
 .supplier-item p {
+  background-color: rgba(54,54,54,0);
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+	padding: 20px;
+	font-size: 18px;
 	width: 100%;
 	color: #fff;
 	top: 100px;
 	  -webkit-transform: translateY(100px);
   -ms-transform: translateY(100px);
   transform: translateY(100px);
+}
+.supplier-item:hover p {
+	  background-color: rgba(54,54,54,.8);
 }
 
 .supplier1 {
@@ -1236,10 +1249,6 @@ label {
   overflow: hidden;
   top: 0;
   left: 0;
-  background-color: rgba(54,54,54,0.2);
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    transition: all .5s;
 }
 
 .overlay h3 {
