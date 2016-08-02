@@ -96,8 +96,11 @@ ul, ol {
 	height: 100px;
 }
 
+
+
 .zoomimg {
     height: 400px;
+    max-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -112,17 +115,25 @@ ul, ol {
 .zoomimg:hover { transform:scale(1.1) }
 
 #food-section .text-center {
-	padding: 5em;
+	padding: 3em;
 }
 
 #drink-section .text-center {
-	padding: 5em;
+	padding: 3em;
 }
 
 #about-section .text-center {
 	padding: 5em;
 }
 
+.banner {
+	font-size: 11px;
+	font-style: italic;
+	padding: 5px 0;
+	margin-top: 20px;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+}
 .about {
     background-image: url('../img/about.jpg');
 }
@@ -264,7 +275,7 @@ hr {
 
 /* hero-bg */
 .hero-wrapper {
-background: #363636 url(../img/noise.png);
+background: #363636 url(../img/hero.jpg);
 	background-position: center;
 	background-attachment: fixed;
 }
@@ -583,6 +594,20 @@ img.img-circle.team-img {
 .owl-theme .owl-controls .owl-page.active span {
 	background: #f1c40f;
 }
+
+
+#notif-section {
+	background: #8b6939;
+	padding: 10px;
+}
+#notif-section p {
+	font-size: 14px;
+	font-style: italic;
+	padding: 10px;
+	margin: 0;
+	color: #fff;
+}
+
 /* Event Section */
 #event-section {
     padding: 0 0 30px 0;
@@ -797,15 +822,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 #footer {
     padding: 50px 0 50px 0;
     width: 100%;
-	background: 
-        /* top, transparent red */ 
-        linear-gradient(
-          rgba(0, 0, 0, 0.9), 
-          rgba(0, 0, 0, 0.9)
-        ),
-        /* bottom, image */
-        url(../img/events-bg.jpg);
-	background-size: cover;
+background: #363636 url(../img/hero.jpg);
 	background-attachment: fixed;
     background-position: center;
 	color: #eaeaea;
@@ -1125,6 +1142,15 @@ label {
 	}
 }
 
+@media (min-width: 768px) {
+#supplier-section .container {
+	width: 70%;
+}
+#event-section .container {
+	width: 70%;
+}
+}
+
 .supplier-item .img {
     height: 300px !important;
 }
@@ -1186,4 +1212,96 @@ label {
 .hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
   left: 0;
   right: 0;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(54,54,54,0.2);
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.overlay h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+	  background-color: rgba(54,54,54,0.7);
+  -webkit-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  transform: translateY(80px);
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.overlay:hover {
+	  background-color: rgba(75,75,75,0);
+}
+
+
+.ribbon {
+  font-size: 10px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+  position: relative;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+  text-align: center;
+  margin: 0 0 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 1.2em solid #eaeaea;
+  z-index: -1;
+}
+.ribbon:before {
+  left: -2em;
+  border-left-color: transparent;
+}
+.ribbon:after {
+  right: -2em;
+  border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+.thumbnail {
+	position: relative;
+	padding: 0;
+}
+
+.thumbnail img {
+}
+
+.caption {
+	width: 100%;
+	background: #000;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }

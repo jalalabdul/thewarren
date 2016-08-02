@@ -83,7 +83,7 @@
 <div class="hero-wrapper" name="home">
     <div class="container">
         <div class="row">
-        <div class="col-md12">
+        <div class="col-md-12">
             <div class="hero-content">
         <img class="logo img-responsive" src="img/logo.svg" alt="...">
 		<hr>
@@ -161,6 +161,7 @@
                 <hr>
                 <p>We run a relaxed cafe which is open all day serving drip filter coffee, loose leaf tea, home made cakes and a light snack menu.
                 </p>
+				<p class="banner">Open for food Thursday: 5pm - 10.30pm Friday: 5pm - 10:30pm Saturday: 5pm - late</p>
                 <a class="btn btn-default btn-info btn-lg" href="">View Food Menu</a>
             </div>
             </div>
@@ -183,6 +184,7 @@
                 <p>
                 Simple, honest and wholesome food. Booking highly recommended - Sample Menu - Open 12 - 2pm 6 - 8pm
                 </p>
+				<p class="banner">Open for drinks Thursday: 5pm - 10.30pm Friday: 5pm - 10:30pm Saturday: 5pm - late</p>
                 <a class="btn btn-default btn-info btn-lg" href=""><span itemprop="reservation">View Drink Menu</span></a>
             </div>
             </div>
@@ -192,7 +194,20 @@
       </div>
   </div>
 </div>
-    </div>    
+    </div> 
+	
+<div id="notif-section">
+  <div class="container-nopadding">
+      <div class="row no-gutters">
+            <div class="col-sm-12"> 
+            <div class="text-center">    
+                <p>No reservations needed for tables under 6
+                </p>
+            </div>
+            </div>
+  </div>
+</div>
+    </div>
     
 <!-- Events Section -->
 <div id="event-section" class="text-center">
@@ -239,20 +254,24 @@
       <hr>
     </div>
             <div class="row">
-				<div class="col-sm-6">
-                    <div class="supplier supplier-item supplier1">
-                        <div class="overlay">
-                            <a class="info" href="http://www.organicfreshfoodcompany.co.uk/c/Lampeter_Bakehouse/6227d3ce83b94b949eb32caf91b16688/"><h3>Lampeter Bakehouse </h3></a>
-                        </div>
-                    </div>
-                </div>
-				<div class="col-sm-6">
-                    <div class="supplier supplier-item supplier2">
-                        <div class="overlay">
-                            <a class="info" href="http://www.organicfreshfoodcompany.co.uk/c/Lampeter_Bakehouse/6227d3ce83b94b949eb32caf91b16688/"><h3>Lampeter Bakehouse </h3></a>
-                        </div>
-                    </div>
-                </div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="thumbnail">
+      <img src="/img/suppliers/coaltown_coffee.jpg" alt="...">
+      <div class="caption">
+        <p><a href="#" class="" role="button">Coaltown Coffee</a></p>
+      </div>
+    </div>
+  </div>
+	  <div class="col-sm-6">
+    <div class="thumbnail">
+      <img src="/img/suppliers/lampeter_bakehouse.jpg" alt="...">
+      <div class="caption">
+        <p><a href="#" class="" role="button">Lampeter Bakehouse</a></p>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
 </div>
@@ -277,12 +296,12 @@
               </div>
       </div>
                     <div class="col-md-4 col-md-12 col-md-pull-4">
-                        <p><strong>Reservations</strong><p><p></p>No reservations required for tables under 6 people</p><br><br>
               <p><strong>Opening Hours</strong></p>
                 		<ul>
 			<li>Thursday: <strong>5pm - 10.30pm</strong></li>
 			<li>Friday: <strong>5pm - 10:30pm</strong></li>
-			<li>Saturday: <strong>5pm - late</strong></li>
+			<li>Saturday: <strong>5pm - late</strong></li><br><br>
+							                        <p><strong>Reservations</strong><p><p></p>No reservations required for tables under 6 people</p>
 			</ul>
           </div>
               <div class="col-md-4 col-md-12 contact-section">
@@ -333,7 +352,7 @@
             scrollwheel: false,
             panControl: true,
             streetViewControl: false,
-            draggable : true,
+            draggable : false,
             overviewMapControl: true,
             overviewMapControlOptions: {
                 opened: false,
@@ -506,15 +525,11 @@ link = '';     bindInfoWindow(marker, map, locations[i][0], description, telepho
         google.maps.event.addListener(iw, 'closeclick', function () {
             infoWindowVisible(false);
         });
-         var gotoMapButton = document.createElement("div");
-    gotoMapButton.setAttribute("style", "margin: 5px; border: 1px solid; padding: 1px 12px; font: bold 11px Roboto, Arial, sans-serif; color: #000000; background-color: #FFFFFF; cursor: pointer;");
-    gotoMapButton.innerHTML = "Open Google Maps";
-    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(gotoMapButton);
-    google.maps.event.addDomListener(gotoMapButton, "click", function () {
+	        map.addListener('click', function () {
         var url = 'https://www.google.com/maps?q=' + encodeURIComponent(marker.getPosition().toUrlValue());
         // you can also hard code the URL
         window.open(url);
-    });
+        });
      
  }
 
