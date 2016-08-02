@@ -10,6 +10,23 @@
           }
         }
       });
+
+    /*====================================
+    Notif
+    ======================================*/
+    window.onscroll = function (e) {
+        var wPosition = window.pageYOffset;
+        var startRange = document.getElementById('food-section').offsetTop - 200;
+        var endRange = document.getElementById('drink-section').offsetTop;
+        if(wPosition > startRange && wPosition < endRange)
+        {
+        document.getElementById('notif-section').style.opacity="1";
+        }
+        else
+        {
+        document.getElementById('notif-section').style.opacity="0";
+        }    
+    };
  
     /*====================================
     Show Menu on Book
