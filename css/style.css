@@ -1169,6 +1169,9 @@ label {
     height: 200px;
     margin: 0 auto;
 }
+	.hero-content {
+		padding: 60px 0 !important;
+	}
 .hvr-overline-from-center:before {
 	display: none;
 }
