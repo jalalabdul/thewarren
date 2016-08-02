@@ -61,7 +61,7 @@ ul, ol {
     font-size: 14px;
 }
 .badge {
-	background: #9b7540;
+	background: #9b7540 !important;
 }
 .clearfix:after {
 	visibility: hidden;
