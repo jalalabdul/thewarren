@@ -993,7 +993,6 @@ element.style {
 
 @media (max-width: 800px) {
 #menu.navbar-default {
-	background-color: #363636;
     height: auto;
     padding: 0 10px;
 }
