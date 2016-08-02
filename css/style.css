@@ -618,14 +618,16 @@ img.img-circle.team-img {
 
 
 #notif-section {
-	opacity: 0;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
 	background: #b88b4c;
 	padding: 10px;
 	z-index: 99999;
-		transition: all 0.5s;
+    transition: all ease .3s;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%)
 }
 #notif-section p {
 	font-size: 14px;
@@ -634,6 +636,13 @@ img.img-circle.team-img {
 	margin: 0;
 	color: #fff;
 		transition: all 0.5s;
+}
+
+.scrolled {
+	background: #000;
+    -webkit-transform: translateY(0) !important;
+    -ms-transform: translateY(0) !important;
+    transform: translateY(0);
 }
 
 /* Event Section */

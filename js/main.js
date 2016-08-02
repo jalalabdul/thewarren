@@ -20,12 +20,10 @@
         var endRange = document.getElementById('drink-section').offsetTop;
         if(wPosition > startRange && wPosition < endRange)
         {
-        document.getElementById('notif-section').style.opacity="1";
-        }
-        else
-        {
-        document.getElementById('notif-section').style.opacity="0";
-        }    
+            $('#notif-section').addClass('scrolled');
+        } else {
+            $('#notif-section').removeClass('scrolled');
+        }   
     };
  
     /*====================================
