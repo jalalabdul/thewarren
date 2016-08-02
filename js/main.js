@@ -12,11 +12,22 @@
       });
 
     /*====================================
+    navbrand Logo
+    ======================================*/
+    $(window).bind('scroll', function() {
+        if ($(window).scrollTop() > 20) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
+    });
+
+    /*====================================
     Notif
     ======================================*/
     window.onscroll = function (e) {
         var wPosition = window.pageYOffset;
-        var startRange = document.getElementById('food-section').offsetTop - 200;
+        var startRange = document.getElementById('food-section').offsetTop - 300;
         var endRange = document.getElementById('drink-section').offsetTop;
         if(wPosition > startRange && wPosition < endRange)
         {
