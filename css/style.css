@@ -139,10 +139,10 @@ ol {
 	background-image: url('../img/about.jpg');
 }
 .food {
-	background-image: url('../img/cafe.jpg');
+	background-image: url('../img/food.jpg');
 }
 .drink {
-	background-image: url('../img/restaurant.jpg');
+	background-image: url('../img/drink.jpg');
 }
 .supplier {
 	position: relative;
@@ -157,21 +157,24 @@ ol {
 	background-size: cover;
 	height: 300px;
 	width: auto;
-	border-radius: 5px;
 }
 .supplier-item p {
 	background-color: rgba(54, 54, 54, 0);
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
-	padding: 20px;
-	font-size: 18px;
-	width: 100%;
+	font-size: 21px;
+	font-family: Montserrat;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	line-height: 1.2em;
 	color: #fff;
-	top: 100px;
-	-webkit-transform: translateY(100px);
-	-ms-transform: translateY(100px);
-	transform: translateY(100px);
+	margin: auto 0;
+	padding: 20px;
+	-webkit-transform: translateY(90px);
+	-ms-transform: translateY(90px);
+	transform: translateY(90px);
 }
 .supplier-item:hover p {
 	background-color: rgba(54, 54, 54, .8);
@@ -246,12 +249,15 @@ hr {
 }
 #menu.navbar-default .navbar-nav > li > a {
 	display: inline-block;
-	font-family: 'Merriweather', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #b88b4c;
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #fff;
@@ -320,6 +326,7 @@ hr {
 }
 .hero-content p {
 	padding: 0 30px;
+	font-family: 'Montserrat', sans-serif;
 }
 .hero-content i {
 	color: #fff !important;
@@ -330,6 +337,7 @@ hr {
 	text-transform: none;
 }
 .hero-content .tagline {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -446,10 +454,15 @@ hr {
 /* Event Section */
 #event-section {
 	padding: 0 0 30px 0;
-	background: #363636 url(../img/noise.png);
+	background: #363636 url(../img/hero.jpg);
+		background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 	color: #f3f3f3;
 }
 #event-section h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 	color: #fff;
 }
 #event-section .event-item .btn {
@@ -518,7 +531,7 @@ hr {
 	color: #fff;
 }
 .carousel-inner {
-	background: #3d3d3d;
+	background: #222222;
 	border-radius: 5px;
 }
 .carousel-control {
@@ -527,7 +540,7 @@ hr {
 .carousel-control {
 	border-radius: 50%;
 	border: 1px solid #fff;
-	margin: 0 30px;
+	margin: 0 -50px;
 	height: 30px;
 	width: 30px;
 	top: 50%;
@@ -659,6 +672,9 @@ a:focus,
 	background-position: center;
 	color: #eaeaea;
 	text-align: left;
+}
+#footer p, ul {
+	font-family: 'Montserrat', sans-serif;
 }
 .footer-brand {
 	width: 64px;
@@ -958,6 +974,9 @@ element.style {
 		-ms-transform: translateY(-100%);
 		transform: translateY(-100%)
 	}
+	.carousel-control {
+	margin: 0 30px;
+}
 }
 @media (min-width: 768px) {
 	#supplier-section .container {
