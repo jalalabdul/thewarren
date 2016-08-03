@@ -139,10 +139,10 @@ ol {
 	background-image: url('../img/about.jpg');
 }
 .food {
-	background-image: url('../img/food.jpg');
+	background-image: url('../img/cafe.jpg');
 }
 .drink {
-	background-image: url('../img/drink.jpg');
+	background-image: url('../img/restaurant.jpg');
 }
 .supplier {
 	position: relative;
@@ -157,24 +157,21 @@ ol {
 	background-size: cover;
 	height: 300px;
 	width: auto;
+	border-radius: 5px;
 }
 .supplier-item p {
 	background-color: rgba(54, 54, 54, 0);
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
-	font-size: 21px;
-	font-family: Montserrat;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	line-height: 1.2em;
-	color: #fff;
-	margin: auto 0;
 	padding: 20px;
-	-webkit-transform: translateY(90px);
-	-ms-transform: translateY(90px);
-	transform: translateY(90px);
+	font-size: 18px;
+	width: 100%;
+	color: #fff;
+	top: 100px;
+	-webkit-transform: translateY(100px);
+	-ms-transform: translateY(100px);
+	transform: translateY(100px);
 }
 .supplier-item:hover p {
 	background-color: rgba(54, 54, 54, .8);
@@ -249,15 +246,12 @@ hr {
 }
 #menu.navbar-default .navbar-nav > li > a {
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Merriweather', sans-serif;
 	color: #b88b4c;
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	position: relative;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #fff;
@@ -456,8 +450,6 @@ hr {
 	color: #f3f3f3;
 }
 #event-section h2 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
 	color: #fff;
 }
 #event-section .event-item .btn {
@@ -667,9 +659,6 @@ a:focus,
 	background-position: center;
 	color: #eaeaea;
 	text-align: left;
-}
-#footer p, ul {
-	font-family: 'Montserrat', sans-serif;
 }
 .footer-brand {
 	width: 64px;
