@@ -152,41 +152,20 @@ ol {
 	text-align: center;
 	cursor: default;
 }
-.supplier-item {
-	background-position: center;
-	background-size: cover;
-	height: 300px;
-	width: auto;
+.thumbnail {
+	border-radius: 0;
+	position: relative;
+	padding: 0;
 }
-.supplier-item p {
-	background-color: rgba(54, 54, 54, 0);
-	-moz-transition: all .5s;
-	-webkit-transition: all .5s;
-	transition: all .5s;
-	font-size: 21px;
-	font-family: Montserrat;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	line-height: 1.2em;
+.thumbnail p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
 	color: #fff;
-	margin: auto 0;
-	padding: 20px;
-	-webkit-transform: translateY(90px);
-	-ms-transform: translateY(90px);
-	transform: translateY(90px);
+	text-transform: uppercase;
+	font-weight: 700;
 }
-.supplier-item:hover p {
-	background-color: rgba(54, 54, 54, .8);
-}
-.supplier1 {
-	background-image: url('../img/suppliers/coaltown_coffee.jpg');
-}
-.supplier2 {
-	background-image: url('../img/suppliers/lampeter_bakehouse.jpg');
-}
-.supplier3 {
-	background-image: url('../img/gambar.jpg');
+.caption {
+	background: rgba(184, 139, 76, .5) !important;
 }
 #status {
 	position: absolute;
@@ -673,7 +652,7 @@ a:focus,
 	color: #eaeaea;
 	text-align: left;
 }
-#footer p, ul {
+#footer, ul {
 	font-family: 'Montserrat', sans-serif;
 }
 .footer-brand {
@@ -952,6 +931,9 @@ element.style {
 		color: #b4bbc2;
 		text-align: center;
 	}
+	.contact {
+		padding-top: 20px;
+	}
 	.event-img p {
 		width: 100%;
 		text-align: center;
@@ -1114,10 +1096,6 @@ element.style {
 .ribbon .ribbon-content:after {
 	right: 0;
 	border-width: 1em 1em 0 0;
-}
-.thumbnail {
-	position: relative;
-	padding: 0;
 }
 .caption {
 	width: 100%;
