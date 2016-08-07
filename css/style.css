@@ -68,6 +68,7 @@ blockquote {
 .zoomimg-wrapper {
 	overflow: hidden;
 }
+
 .divider {
 	display: inline-block;
 	height: 100px;
@@ -82,12 +83,15 @@ blockquote {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+#inner-page {
+	padding: 50px 0;
+}
 #inner-page p {
 	margin: 20px 0;
 }
 .zoomimg {
-	height: 400px;
-	max-height: 400px;
+	height: 450px;
+	max-height: 450px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -100,15 +104,6 @@ blockquote {
 }
 .zoomimg:hover {
 	transform: scale(1.1)
-}
-#food-section .text-center {
-	padding: 2em;
-}
-#drink-section .text-center {
-	padding: 2em;
-}
-#about-section .text-center {
-	padding: 4em;
 }
 .banner {
 	font-size: 11px;
@@ -1022,6 +1017,16 @@ element.style {
 	#event-section .container {
 		width: 70%;
 	}
+	.content-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	}
+}
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .supplier-item .img {
 	height: 300px !important;
@@ -1129,4 +1134,15 @@ element.style {
 	bottom: 0;
 	left: 0;
 	padding: 20px 0;
+}
+.parent {
+	height: 450px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+}
+.child {
+	width: 80%;
+	overflow: hidden;
 }
