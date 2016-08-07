@@ -801,10 +801,6 @@ a:focus,
 	display: inline-block;
 }
 
-#inner-page {
-	padding: 50px 0;
-}
-
 /* Divider */
 .modal-footer {
 	border: none;
