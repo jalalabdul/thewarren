@@ -27,7 +27,7 @@ p {
 	font-family: , sans-serif;
 }
 a {
-	color: #5b777f;
+	color: #b88b4c;
 	transition: all 0.5s;
 }
 strong {
@@ -39,7 +39,7 @@ sup {
 a:hover,
 a:focus {
 	text-decoration: none;
-	color: #f1c40f;
+	color: #8b6939;
 }
 .img-centered {
 	margin: 0 auto;
@@ -304,8 +304,9 @@ hr {
 	padding: 0 30px;
 	font-family: 'Montserrat', sans-serif;
 }
-.hero-content i {
-	color: #fff !important;
+.location {
+	margin-right: 5px;
+	font-size: 12px;
 }
 .hero-content .btn {
 	font-size: 12px;
@@ -317,6 +318,7 @@ hr {
 	font-size: 24px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
+	line-height: 1;
 }
 .info-content {
 	padding: 0;
@@ -532,7 +534,6 @@ hr {
 	border-radius: 50%;
 	border: 1px solid #fff;
 	margin: 0 -50px;
-	padding: 0 0 30px 0;
 	height: 30px;
 	width: 30px;
 	top: 50%;
@@ -551,9 +552,6 @@ hr {
 }
 #map-section .section-title h3 {
 	padding: 0 200px;
-}
-#map-section form {
-	padding: 50px 0;
 }
 #map-section .fa {
 	color: #fff;
@@ -598,6 +596,17 @@ label {
 #map-section .social i.fa:hover {
 	color: #032731;
 }
+
+#signup-section {
+	padding: 30px 0 40px 0 !important;
+}
+#signup-section p, h4 {
+	color: #363636;
+}
+#signup-section .form-inline {
+	margin-top: 20px;
+}
+
 .btn {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -652,6 +661,7 @@ a:focus,
 	background: #404040;
 	color: #eaeaea;
 	text-align: left;
+	height: 300px;
 }
 /* Sign Up */
 #signup-section {
@@ -695,16 +705,20 @@ a:focus,
 #footer, ul {
 	font-family: 'Montserrat', sans-serif;
 }
+#footer .address {
+	text-align: center !important;
+}
 .footer-brand {
 	width: 64px;
 	margin: 0 auto;
+	margin-bottom: 20px;
 }
 .copyright {
 	font-size: 12px;
 	text-align: right;
 }
 .socials {
-	padding-top: 30px;
+	margin-top: 20px;
 	color: #b4bbc2;
 	text-align: center;
 }
@@ -907,7 +921,7 @@ element.style {
 	}
 	.footer-brand {
 		width: 72px;
-		margin: 30px auto;
+		margin: 20px auto;
 	}
 	.map-section {
 		padding-top: 30px;
@@ -965,7 +979,7 @@ element.style {
 		text-align: center;
 	}
 	.footer-brand {
-		margin: 50px auto;
+		margin: 20px auto;
 	}
 	.socials {
 		padding-top: 0;
@@ -1011,10 +1025,6 @@ element.style {
 }
 .supplier-item .img {
 	height: 300px !important;
-}
-#map-box {
-	height: 350px;
-	width: 100%;
 }
 .gm-style-iw * {
 	display: block;

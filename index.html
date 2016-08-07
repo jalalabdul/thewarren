@@ -84,9 +84,8 @@
 		<div class="hero-content">
 			<img class="logo img-responsive" src="img/logo.svg" alt="...">
 			<hr>
-			<p class="tagline">Late Night Cafe
-				<p>
-					<hr>
+			<p class="tagline">Late Night Cafe<p>
+			<a href="https://goo.gl/maps/8AD57KnWASo" target="_blank"><i class="fa fa-map-marker location"></i>11 Mansel St, Carmarthen</a>
 					<p><i class="fa fa-angle-down"></i></p>
 					<p> Opening Times</p>
 					<ul>
@@ -271,7 +270,7 @@
 <!-- Map Section -->
 <div id="map-section">
 	<div class="container-nopadding map">
-		<div class="map-box" id="map-box"></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10082.213213239756!2d-4.309595730408053!3d51.87950844581877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba3a59cea7c99c9f!2sThe+Warren!5e0!3m2!1sen!2suk!4v1470565286461" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
 </div>
 
@@ -280,6 +279,8 @@
 <div class="container">
 <div id="row">
 	<div class="cold-md-12">
+		<h4>Sign up to our mailing list</h4>
+		<p>Be the first to hear about upcoming events, receive exclusive discounts and invites.</p>
 		<form class="form-inline">
 		  <div class="form-group">
 			<label class="sr-only" for="exampleInputEmail3">Your Email address</label>
@@ -298,6 +299,8 @@
 <div id="row">
 	<div class="col-md-4 col-md-12 col-md-push-4">
 		<img class="footer-brand img-responsive" src="img/logo_nostrap.svg" alt="...">
+		<div class="address">
+		<a href="https://goo.gl/maps/8AD57KnWASo" target="_blank"><i class="fa fa-map-marker location"></i>11 Mansel St, Carmarthen</a></div>
 		<div class="socials">
 			<a href="" target="https://www.facebook.com/WarrenManselSt"><i class="fa fa-facebook"></i></a>
 			<a href="" target="https://twitter.com/WarrenManselSt"><i class="fa fa-twitter"></i></a>
@@ -349,279 +352,5 @@
 <script type="text/javascript" src="js/instafeed.min.js"></script>
 <script type="text/javascript" src="js/instagram.js"></script>
 
-<!-- Google Map
-================================================== -->
-<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyANnclE-b3i_8voRezXU56_ezlhvnoMrPQ&sensor=false&extension=.js'></script>
-
-<script>
-google.maps.event.addDomListener(window, 'load', init);
-var map;
-
-function init() {
-var mapOptions = {
-	center: new google.maps.LatLng(51.8568015, -4.3097438),
-	zoom: 16,
-	zoomControl: true,
-	disableDoubleClickZoom: true,
-	mapTypeControl: false,
-	scaleControl: false,
-	scrollwheel: false,
-	panControl: true,
-	streetViewControl: false,
-	draggable: false,
-	overviewMapControl: true,
-	overviewMapControlOptions: {
-		opened: false,
-	},
-	mapTypeId: google.maps.MapTypeId.ROADMAP,
-	styles: [
-		{
-			"featureType": "water",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#d3d3d3"
-				}
-]
-}, {
-			"featureType": "transit",
-			"stylers": [
-				{
-					"color": "#808080"
-				},
-				{
-					"visibility": "off"
-				}
-]
-}, {
-			"featureType": "road.highway",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"visibility": "on"
-				},
-				{
-					"color": "#b3b3b3"
-				}
-]
-}, {
-			"featureType": "road.highway",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#ffffff"
-				}
-]
-}, {
-			"featureType": "road.local",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"visibility": "on"
-				},
-				{
-					"color": "#ffffff"
-				},
-				{
-					"weight": 1.8
-				}
-]
-}, {
-			"featureType": "road.local",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"color": "#d7d7d7"
-				}
-]
-}, {
-			"featureType": "poi",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"visibility": "on"
-				},
-				{
-					"color": "#ebebeb"
-				}
-]
-}, {
-			"featureType": "administrative",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#a7a7a7"
-				}
-]
-}, {
-			"featureType": "road.arterial",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#ffffff"
-				}
-]
-}, {
-			"featureType": "road.arterial",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#ffffff"
-				}
-]
-}, {
-			"featureType": "landscape",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"visibility": "on"
-				},
-				{
-					"color": "#efefef"
-				}
-]
-}, {
-			"featureType": "road",
-			"elementType": "labels.text.fill",
-			"stylers": [
-				{
-					"color": "#696969"
-				}
-]
-}, {
-			"featureType": "administrative",
-			"elementType": "labels.text.fill",
-			"stylers": [
-				{
-					"visibility": "on"
-				},
-				{
-					"color": "#737373"
-				}
-]
-}, {
-			"featureType": "poi",
-			"elementType": "labels.icon",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-]
-}, {
-			"featureType": "poi",
-			"elementType": "labels",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-]
-}, {
-			"featureType": "road.arterial",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"color": "#d6d6d6"
-				}
-]
-}, {
-			"featureType": "road",
-			"elementType": "labels.icon",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-]
-}, {}, {
-			"featureType": "poi",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#dadada"
-				}
-]
-}
-],
-}
-var mapElement = document.getElementById('map-box');
-var map = new google.maps.Map(mapElement, mapOptions);
-var locations = [
-['The Warren', 'undefined', 'undefined', 'undefined', 'undefined', 51.8568015, -4.3097438, 'https://mapbuildr.com/assets/img/markers/hollow-pin-black.png']
-];
-for (i = 0; i < locations.length; i++) {
-	if (locations[i][1] == 'undefined') {
-		description = '11 Mansel Street, Carmarthen, SA311PX';
-	} else {
-		description = locations[i][1];
-	}
-	if (locations[i][2] == 'undefined') {
-		telephone = '';
-	} else {
-		telephone = locations[i][2];
-	}
-	if (locations[i][3] == 'undefined') {
-		email = '';
-	} else {
-		email = locations[i][3];
-	}
-	if (locations[i][4] == 'undefined') {
-		web = '';
-	} else {
-		web = locations[i][4];
-	}
-	if (locations[i][7] == 'undefined') {
-		markericon = '';
-	} else {
-		markericon = locations[i][7];
-	}
-	marker = new google.maps.Marker({
-		icon: markericon,
-		position: new google.maps.LatLng(locations[i][5], locations[i][6]),
-		map: map,
-		title: locations[i][0],
-		desc: description,
-		tel: telephone,
-		email: email,
-		web: web
-	});
-	link = '';
-	bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
-}
-
-function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
-	var infoWindowVisible = (function () {
-		var currentlyVisible = true;
-		return function (visible) {
-			if (visible !== undefined) {
-				currentlyVisible = visible;
-			}
-			return currentlyVisible;
-		};
-	}());
-	iw = new google.maps.InfoWindow();
-	google.maps.event.addListener(marker, 'click', function () {
-		if (infoWindowVisible()) {
-			iw.close();
-			infoWindowVisible(false);
-		} else {
-			var html = "<div style='color:#000;background-color:#fff;padding:5px;width:auto;'><h5>" + title + "</h5><p>" + desc + "<p></div>";
-			iw = new google.maps.InfoWindow({
-				content: html
-			});
-			iw.open(map, marker);
-			infoWindowVisible(true);
-		}
-	});
-	google.maps.event.addListener(iw, 'closeclick', function () {
-		infoWindowVisible(false);
-	});
-	map.addListener('click', function () {
-		var url = 'https://www.google.com/maps?q=' + encodeURIComponent(marker.getPosition().toUrlValue());
-		// you can also hard code the URL
-		window.open(url);
-	});
-
-}
-}
-</script>
 </body>
 </html>
