@@ -1,3 +1,5 @@
+/* #Basic Styles
+================================================== */
 body,
 html {
 	font-family: 'Merriweather', sans-serif;
@@ -9,6 +11,23 @@ html {
 	font-weight: 300;
 	line-height: 2;
 }
+.section-heading {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	
+}
+.row.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/* #Typography
+================================================== */
 h1,
 h2,
 h3,
@@ -26,52 +45,16 @@ h1 {
 p {
 	font-family: , sans-serif;
 }
-a {
-	color: #b88b4c;
-	transition: all 0.5s;
-}
 strong {
 	color: #b88b4c;
 }
 sup {
 	font-size: .6em;
 }
-a:hover,
-a:focus {
-	text-decoration: none;
-	color: #8b6939;
-}
-.img-centered {
-	margin: 0 auto;
-}
 ul,
 ol {
 	list-style: none;
 	padding: 0;
-}
-blockquote {
-}
-.section-heading {
-	margin-top: 50px;
-	margin-bottom: 30px;
-	
-}
-.row.no-gutters {
-	margin-right: 0;
-	margin-left: 0;
-}
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-	padding-right: 0;
-	padding-left: 0;
-}
-.zoomimg-wrapper {
-	overflow: hidden;
-}
-
-.divider {
-	display: inline-block;
-	height: 100px;
 }
 .caption {
   text-align: center;
@@ -83,12 +66,81 @@ blockquote {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.section-title {
+	padding: 30px 0px;
+}
+.section-title h2 {
+	margin-bottom: 26px;
+}
+
+/* #Button
+================================================== */
+.btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #b88b4c;
+	border: none;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 12px !important;
+	font-weight: 500;
+	transition: all 0.5s;
+	text-transform: uppercase;
+	padding-left: 35px;
+	padding-right: 35px;
+	letter-spacing: .5px;
+}
+.btn:hover,
+.btn:focus {
+	background: #8b6939;
+	border: none;
+	color: #fff;
+}
+.btn:active,
+.btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* #Link
+================================================== */
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: #8b6939;
+}
+a {
+	color: #b88b4c;
+	transition: all 0.5s;
+}
+
+/* #Flexbox rules
+================================================== */
+.parent {
+	height: 450px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+}
+.child {
+	width: 80%;
+	overflow: hidden;
+}
+
+/* #Inner page styles
+================================================== */
 #inner-page {
 	padding: 50px 0;
 }
 #inner-page p {
 	margin: 20px 0;
 }
+
+/* #Hover zooming wrapper
+================================================== */
 .zoomimg {
 	height: 450px;
 	max-height: 450px;
@@ -105,6 +157,12 @@ blockquote {
 .zoomimg:hover {
 	transform: scale(1.1)
 }
+.zoomimg-wrapper {
+	overflow: hidden;
+}
+
+/* #Banner, Ribbon, & Badge
+================================================== */
 .banner {
 	font-size: 11px;
 	font-style: italic;
@@ -116,6 +174,52 @@ blockquote {
 .badge {
 	background: #95713e;
 }
+.ribbon {
+	font-size: 10px !important;
+	/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+	position: relative;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	text-align: center;
+	margin: 0 0 3em;
+	/* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before,
+.ribbon:after {
+	content: "";
+	position: absolute;
+	display: block;
+	border: 1.2em solid #eaeaea;
+	z-index: -1;
+}
+.ribbon:before {
+	left: -2em;
+	border-left-color: transparent;
+}
+.ribbon:after {
+	right: -2em;
+	border-right-color: transparent;
+}
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #804f7c transparent transparent transparent;
+	bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+	left: 0;
+	border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+	right: 0;
+	border-width: 1em 1em 0 0;
+}
+
+/* #About, Food, Drink section images
+================================================== */
 .about {
 	background-image: url('../img/about.jpg');
 }
@@ -125,45 +229,9 @@ blockquote {
 .drink {
 	background-image: url('../img/drink.jpg');
 }
-.supplier {
-	position: relative;
-	margin-bottom: 20px;
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-	cursor: default;
-}
-.thumbnail {
-	border-radius: 0;
-	position: relative;
-	padding: 0;
-}
-.thumbnail p {
-	margin: 0;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-.overlay {
-	background: rgba(184, 139, 76, .5) !important;
-}
-#status {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 64px;
-	height: 64px;
-	margin: -32px 0 0 -32px;
-	padding: 0;
-}
-.section-title {
-	padding: 30px 0px;
-}
-.section-title h2 {
-	margin-bottom: 26px;
-}
+
+
+
 hr {
 	height: 2px;
 	width: 60px;
@@ -172,7 +240,9 @@ hr {
 	border: 0;
 	margin-bottom: 30px;
 }
-/* Navigation */
+
+/* #Navigation
+================================================== */
 #menu {
 	transition: all 0.3s;
 	height: 50px;
@@ -266,7 +336,45 @@ hr {
 	background-color: #fff;
 	border: none;
 }
-/* hero-bg */
+
+/* #Menu hover
+================================================== */
+.hvr-overline-from-center {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: relative;
+	overflow: hidden;
+}
+.hvr-overline-from-center:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	top: 0;
+	background: #fff;
+	height: 2px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-overline-from-center:hover:before,
+.hvr-overline-from-center:focus:before,
+.hvr-overline-from-center:active:before {
+	left: 0;
+	right: 0;
+}
+
+
+/* #Hero wrapper
+================================================== */
 .hero-wrapper {
 	background-position: center;
 	background-attachment: fixed;
@@ -336,36 +444,9 @@ hr {
 	line-height: 21px;
 	border-radius: 50%;
 }
-.intro-text {
-	position: relative;
-	text-align: left;
-	padding-top: 150px;
-	padding-bottom: 150px;
-}
-.intro-text H1 {
-	font-size: 90px;
-	color: #1cb2df;
-	letter-spacing: -2px;
-	line-height: 80px;
-	padding-bottom: 50px;
-}
-.layer {
-	background-color: rgba(0, 0, 0, 0.7);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.btn-default {
-	color: #294d57;
-	font-family: 'Merriweather', sans-serif;
-	font-weight: 300;
-	background-color: #b88b4c;
-	margin: 0 8px;
-	transition: all 0.5s;
-}
-/* About Section */
+
+/* #About section
+================================================== */
 #about-section {
 	background: #b88b4c;
 }
@@ -401,15 +482,9 @@ hr {
 #about-section i {
 	margin-right: 5px;
 }
-.demoFeed {
-	list-style: none;
-	min-height: 300px;
-	overflow: hidden;
-}
-.demoFeed li {
-	float: left;
-	margin: 0 2px;
-}
+
+/* #Notification
+================================================== */
 #notif-section {
 	width: 100%;
 	position: fixed;
@@ -435,7 +510,9 @@ hr {
 	-ms-transform: translateY(0) !important;
 	transform: translateY(0) !important;
 }
-/* Event Section */
+
+/* #Event section
+================================================== */
 #event-section {
 	padding: 0 0 30px 0;
 	background: #363636 url(../img/hero.jpg);
@@ -443,6 +520,10 @@ hr {
 	background-position: center;
 	background-size: cover;
 	color: #f3f3f3;
+}
+#event-section {
+	padding-top: 30px;
+	padding-bottom: 80px;
 }
 #event-section h1 {
 	color: #fff;
@@ -519,7 +600,6 @@ hr {
 }
 .carousel-inner {
 	background: #222222;
-	border-radius: 5px;
 }
 .carousel-control {
 	background: transparent !important;
@@ -534,7 +614,37 @@ hr {
 	top: 50%;
 	z-index: 5;
 }
-/* Map Section */
+
+/* #Supplier section
+================================================== */
+#supplier-section {
+	padding-top: 30px;
+	padding-bottom: 80px;
+}
+.thumbnail {
+	position: relative;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+}
+.thumbnail p {
+	top: 50%;
+	position: absolute;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 20px;
+	text-align: center !important;
+	transform: translateY(-50%);
+}
+
+
+/* #Map section
+================================================== */
 #map-section {
 	padding: 0;
 }
@@ -550,11 +660,6 @@ hr {
 }
 #map-section .fa {
 	color: #fff;
-}
-label {
-	font-size: 12px;
-	font-weight: 400;
-	float: left;
 }
 #map-section .form-control {
 	display: block;
@@ -588,10 +693,23 @@ label {
 	color: #fff;
 	transition: all 0.5s;
 }
+#map-section .text-danger {
+	font-size: 12px;
+	color: #c00069;
+	text-align: left;
+}
 #map-section .social i.fa:hover {
 	color: #032731;
 }
+#map-section {
+	background: #404040;
+	color: #eaeaea;
+	text-align: left;
+	height: 300px;
+}
 
+/* #Sign-up section
+================================================== */
 #signup-section {
 	padding: 30px 0 40px 0 !important;
 }
@@ -601,64 +719,6 @@ label {
 #signup-section .form-inline {
 	margin-top: 20px;
 }
-
-.btn {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background: #b88b4c;
-	border: none;
-	border-radius: 50px;
-	color: #fff;
-	font-size: 12px !important;
-	font-weight: 500;
-	transition: all 0.5s;
-	text-transform: uppercase;
-	padding-left: 35px;
-	padding-right: 35px;
-	letter-spacing: .5px;
-}
-.btn:hover,
-.btn:focus {
-	background: #8b6939;
-	border: none;
-	color: #fff;
-}
-#map-section .text-danger {
-	font-size: 12px;
-	color: #c00069;
-	text-align: left;
-}
-.btn:active,
-.btn.active {
-	background-image: none;
-	outline: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-#map-section .btn {
-	width: 150px;
-}
-a:focus,
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn.active.focus {
-	outline: none;
-	outline-offset: none;
-}
-.toggle1 {
-	display: none;
-}
-/* Contact */
-#map-section {
-	background: #404040;
-	color: #eaeaea;
-	text-align: left;
-	height: 300px;
-}
-/* Sign Up */
 #signup-section {
 	background: #b88b4c;
 	padding: 20px 0;
@@ -687,7 +747,8 @@ a:focus,
 	text-align: center;
 }
 
-/* Footer */
+/* #Footer section
+================================================== */
 #footer {
 	padding: 50px 0 0 0;
 	width: 100%;
@@ -734,25 +795,14 @@ a:focus,
 	background: #b88b4c;
 	color: #fff;
 }
-.award-logo {
-	padding-top: 30px;
-	padding-bottom: 50px;
-}
 .contact-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-.hiring {
-	z-index: 200;
-	position: fixed;
-	opacity: 0;
-	top: 40%;
-	left: 0;
-	width: 87px;
-	height: 125px;
-	transition: all 0.5s;
-}
+
+/* #Go to top
+================================================== */
 .go-top {
 	z-index: 200;
 	position: fixed;
@@ -789,38 +839,10 @@ a:focus,
 .go-down i {
 	color: #fff;
 }
-.signup {
-	background: #b88b4c;
-	z-index: 99999;
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 80px;
-	height: 50px;
-	text-align: center;
-	padding: 14px 14px 14px 18px;
-}
-.signup i {
-	color: #fff;
-}
-/* Divider */
-.divider {
-	width: 5px;
-	height: auto;
-	display: inline-block;
-}
 
-/* Divider */
-.modal-footer {
-	border: none;
-}
-.collapse {
-	overflow: hidden;
-}
-element.style {
-	display: none;
-}
-/* Responsive */
+
+/* #Responsive
+================================================== */
 @media (max-width: 800px) {
 	#menu.navbar-default {
 		height: auto;
@@ -828,16 +850,6 @@ element.style {
 	}
 	.navbar-collapse {
 		height: auto;
-	}
-	.intro-text {
-		padding-top: 150px;
-		padding-bottom: 50px;
-	}
-	label {
-		float: none !important
-	}
-	.hover-bg .hover-text {
-		padding: 12% 10%;
 	}
 	#socials {
 		text-align: center;
@@ -857,54 +869,9 @@ element.style {
 	.contact {
 		text-align: center;
 	}
-	#services-section .section-title h3 {
-		padding: 0 20px;
-		font-size: 18px;
-		line-height: inherit;
-	}
-	#map-section .section-title h3 {
-		padding: 0 20px;
-		font-size: 18px;
-		line-height: inherit;
-	}
-	#map-section .divider {
-		display: block;
-		height: 10px;
-	}
-	#services-section .row {
-		padding-bottom: 50px;
-	}
-	.services-arrow,
-	.services-arrow-right {
-		display: none;
-	}
-	.services-icon,
-	.services-icon-right {
-		padding: 0px 0px;
-		margin: 0 0;
-	}
-	.services-content,
-	.services-content-right {
-		padding: 20px 20px;
-		text-align: center;
-	}
-	#team-section .item {
-		padding: 0 0px;
-	}
 	.navbar .navbar-default,
 	.navbar-collapse {
 		text-align: center;
-	}
-	#div2 {
-		margin: 50px auto;
-		width: 250px;
-		height: 250px;
-	}
-	#msgErreur > div {
-		top: -50px;
-		left: 100px;
-		width: 180px;
-		height: 180px;
 	}
 	.copyright {
 		text-align: center;
@@ -915,7 +882,7 @@ element.style {
 		text-align: center;
 	}
 	.footer-brand {
-		width: 72px;
+		width: 96px;
 		margin: 20px auto;
 	}
 	.map-section {
@@ -944,28 +911,6 @@ element.style {
 	}
 	.navbar-default .btn {
 		display: inline-block;
-	}
-	.intro-text {
-		padding-top: 100px;
-	}
-	.intro-text p {
-		font-size: 14px;
-		line-height: inherit;
-	}
-	.intro-text H1 {
-		font-size: 48px;
-		line-height: 48px;
-	}
-	#div2 {
-		margin: 100px auto;
-		width: 250px;
-		height: 250px;
-	}
-	#msgErreur > div {
-		top: -50px;
-		left: 80px;
-		width: 180px;
-		height: 180px;
 	}
 	.copyright {
 		text-align: center;
@@ -1011,138 +956,4 @@ element.style {
 }
 }
 @media (min-width: 768px) {
-	#supplier-section .container {
-		width: 70%;
-	}
-	#event-section .container {
-		width: 70%;
-	}
-	.content-center {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-	}
-}
-.Aligner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.supplier-item .img {
-	height: 300px !important;
-}
-.gm-style-iw * {
-	display: block;
-	width: 100%;
-}
-.gm-style-iw h4,
-.gm-style-iw p {
-	margin: 0;
-	padding: 0;
-}
-.gm-style-iw a {
-	color: #4272db;
-}
-#event-section {
-	padding-top: 30px;
-	padding-bottom: 80px;
-}
-#supplier-section {
-	padding-top: 30px;
-	padding-bottom: 80px;
-}
-/* Overline From Center */
-.hvr-overline-from-center {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	position: relative;
-	overflow: hidden;
-}
-.hvr-overline-from-center:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	left: 50%;
-	right: 50%;
-	top: 0;
-	background: #fff;
-	height: 2px;
-	-webkit-transition-property: left, right;
-	transition-property: left, right;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-}
-.hvr-overline-from-center:hover:before,
-.hvr-overline-from-center:focus:before,
-.hvr-overline-from-center:active:before {
-	left: 0;
-	right: 0;
-}
-.ribbon {
-	font-size: 10px !important;
-	/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-	position: relative;
-	border-top: 1px solid #eaeaea;
-	border-bottom: 1px solid #eaeaea;
-	text-align: center;
-	margin: 0 0 3em;
-	/* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-}
-.ribbon:before,
-.ribbon:after {
-	content: "";
-	position: absolute;
-	display: block;
-	border: 1.2em solid #eaeaea;
-	z-index: -1;
-}
-.ribbon:before {
-	left: -2em;
-	border-left-color: transparent;
-}
-.ribbon:after {
-	right: -2em;
-	border-right-color: transparent;
-}
-.ribbon .ribbon-content:before,
-.ribbon .ribbon-content:after {
-	content: "";
-	position: absolute;
-	display: block;
-	border-style: solid;
-	border-color: #804f7c transparent transparent transparent;
-	bottom: -1em;
-}
-.ribbon .ribbon-content:before {
-	left: 0;
-	border-width: 1em 0 0 1em;
-}
-.ribbon .ribbon-content:after {
-	right: 0;
-	border-width: 1em 1em 0 0;
-}
-.overlay {
-	width: 100%;
-	background: #000;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 20px 0;
-}
-.parent {
-	height: 450px;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  resize: both;
-}
-.child {
-	width: 80%;
-	overflow: hidden;
 }
