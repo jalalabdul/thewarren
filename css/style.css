@@ -803,11 +803,11 @@ hr {
 }
 .socials i {
 	color: #b88b4c;
-	padding: 8px;
+	font-size: 12px;
+	margin-right: 5px;
 }
 .socials i:hover {
-	background: #b88b4c;
-	color: #202020;
+	color: #FFF;
 }
 .contact-list {
 	list-style: none;
