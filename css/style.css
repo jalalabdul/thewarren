@@ -421,7 +421,6 @@ hr {
 	color: #fff;
 }
 .hero-content p {
-	padding: 0 30px;
 	font-family: 'Montserrat', sans-serif;
 }
 .location {
@@ -645,7 +644,7 @@ hr {
 	border-radius: 0;
 }
 .thumbnail p {
-	background: #242424;
+	background: #303030;
 	bottom: 0;
 	position: absolute;
 	font-family: 'Montserrat', sans-serif;
@@ -975,6 +974,9 @@ hr {
 		-ms-transform: translateY(-100%);
 		transform: translateY(-100%)
 	}
+	#footer {
+		padding: 50px 0;
+	}
 	#footer .arrow-down {
 	display: inline-block;
 	}
@@ -984,5 +986,8 @@ hr {
 	}
 	.back-to-top {
 		margin-top: 100px;
+	}
+	.carousel-control {
+		margin-top: -80px;
 	}
 }
