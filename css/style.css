@@ -917,6 +917,9 @@ hr {
 	.map-section {
 		padding-top: 30px;
 	}
+	#footer2 {
+	text-align: center !important;
+	}
 }
 @media (max-width: 480px) {
 	.navbar-default .navbar-collapse {
@@ -982,7 +985,7 @@ hr {
 	}
 	#footer2 {
 	text-align: center !important;
-		padding: 50px 0;
+	padding: 50px 0;
 	}
 	.back-to-top {
 		margin-top: 100px;
