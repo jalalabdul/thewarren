@@ -438,7 +438,7 @@ hr {
 	font-size: 24px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	line-height: 1;
+	line-height: 2;
 }
 .info-content {
 	padding: 0;
@@ -904,9 +904,10 @@ hr {
 	}
 	.copyright {
 		text-align: center;
+		padding-bottom: 20px;
 	}
 	.socials {
-		padding-bottom: 50px;
+		padding-bottom: 30px;
 		padding-top: 0;
 		text-align: center;
 	}
@@ -979,6 +980,9 @@ hr {
 	}
 	#footer2 {
 	text-align: center !important;
-		
-}
+		padding: 50px 0;
+	}
+	.back-to-top {
+		margin-top: 100px;
+	}
 }
