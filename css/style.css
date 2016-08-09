@@ -610,7 +610,7 @@ hr {
 	color: #fff;
 }
 .carousel-inner {
-	background: #242424;
+	background: #303030;
 }
 .carousel-control {
 	background: #202020;
@@ -773,7 +773,7 @@ hr {
 	font-family: 'Montserrat', sans-serif;
 }
 #footer .title {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 #footer .address {
 	text-align: center !important;
@@ -916,15 +916,6 @@ hr {
 	.map-section {
 		padding-top: 30px;
 	}
-	#food-section .text-center {
-		padding: 2em;
-	}
-	#drink-section .text-center {
-		padding: 2em;
-	}
-	#about-section .text-center {
-		padding: 2em;
-	}
 }
 @media (max-width: 480px) {
 	.navbar-default .navbar-collapse {
@@ -975,7 +966,7 @@ hr {
 		display: none;
 	}
 	.tagline {
-		font-size: 16px !important;
+		font-size: 18px !important;
 	}
 	.navbar {
 		-webkit-transform: translateY(-100%);
