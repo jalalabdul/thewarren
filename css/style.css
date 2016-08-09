@@ -729,6 +729,7 @@ hr {
 }
 #signup-section p, h4 {
 	color: #363636;
+	margin-bottom: 20px;
 }
 #signup-section .form-inline {
 	margin-top: 20px;
