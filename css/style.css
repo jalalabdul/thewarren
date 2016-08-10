@@ -1010,9 +1010,10 @@ hr {
 	display: inline-block !important;
 	}
 	.event-img p {
-	font-size: 8px;
+	position: relative;
+	font-size: 10px;
 	line-height: 1.5;
-	padding: 10px;
+	padding: 20px;
 	}
 	#signup-section p {
 		line-height: 1.5;
