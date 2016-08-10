@@ -349,6 +349,13 @@ hr {
 	background-color: #fff;
 	border: none;
 }
+.phone-button {
+	display: none !important;
+}
+.phone-button i {
+	color: #FFF !important;
+	margin-right: 6px;
+}
 
 /* #Menu hover
 ================================================== */
@@ -568,7 +575,7 @@ hr {
 .event-title {
 	display: inline-block;
 	margin-bottom: 20px;
-}
+}df
 #event-section .event-date {
 	text-align: center;
 	margin-right: 15px;
@@ -583,10 +590,8 @@ hr {
 }
 .event-img {
 	position: relative;
-	background-position: right;
-	width: 100%;
-	height: 450px;
 }
+
 .event-img p {
 	position: absolute;
 	width: 80%;
@@ -600,23 +605,18 @@ hr {
 /* Change event image here */
 .event1 {
 	background: url(../img/events/matt-fred.png);
-	background-size: cover;
 }
 .event2 {
 	background: url(../img/events/jodie-marie-shot.jpg);
-	background-size: cover;
 }
 .event3 {
 	background: url(../img/events/garethandbella.jpg);
-	background-size: cover;
 }
 .event4 {
 	background: url(../img/events/wine-tasting.jpg);
-	background-size: cover;
 }
 .event5 {
 	background: url(../img/events/gin.jpg);
-	background-size: cover;
 }
 /* ======================= */
 .event-text {
@@ -1004,6 +1004,14 @@ hr {
 		margin-top: 100px;
 	}
 	.carousel-control {
-		margin-top: -80px;
+		margin-top: -20px;
+	}
+	.phone-button {
+	display: inline-block !important;
+	}
+	.event-img p {
+	font-size: 9px;
+	line-height: 1.5;
+	padding: 10px;
 	}
 }
