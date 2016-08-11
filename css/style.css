@@ -105,7 +105,7 @@ ol {
 }
 .btn:hover,
 .btn:focus {
-	background: #8b6939;
+	background: #a36b37;
 	border: none;
 	color: #fff;
 }
@@ -348,6 +348,9 @@ hr {
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #fff;
 	border: none;
+}
+.phone {
+	font-family: 'Montserrat', sans-serif;
 }
 .phone-button {
 	display: none !important;
@@ -1017,5 +1020,11 @@ hr {
 	}
 	#signup-section p {
 		line-height: 1.5;
+	}
+	.inner li {
+	float: left;
+	}
+	.inner ul {
+	padding: 20px 0;
 	}
 }
