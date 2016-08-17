@@ -741,6 +741,10 @@ hr {
 #signup-section {
 	padding: 30px 0 40px 0 !important;
 }
+#signup-section h4 {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
 #signup-section p, h4 {
 	color: #363636;
 	margin-bottom: 20px;
