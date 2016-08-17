@@ -630,14 +630,16 @@ hr {
 	background: #303030;
 }
 .carousel-control {
-	background: #202020;
+	background: #202020 !important;
+	opacity: .7 !important;
 	background-image: #202020;
 	line-height: 1.5;
 }
 .carousel-control {
-	margin: 0 0;
-	height: 30px;
-	width: 30px;
+	margin: 0 0; 
+	height: 80px;
+	width: 80px;
+	padding: 25px;
 	top: 50%;
 	z-index: 5;
 	opacity: .8;
@@ -1007,14 +1009,15 @@ hr {
 		margin-top: 100px;
 	}
 	.carousel-control {
-		margin-top: -20px;
+		position: absolute;
+		top: 150px;
 	}
 	.phone-button {
 	display: inline-block !important;
 	}
 	.event-img p {
 	position: relative;
-	font-size: 10px;
+	font-size: 11px;
 	line-height: 1.5;
 	padding: 20px;
 	}
