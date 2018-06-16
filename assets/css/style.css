@@ -28,8 +28,8 @@ body {
 	padding-right: 0;
 	padding-left: 0;
 }
-.dark {
-	background: #fff;
+.strong {
+	font-weight: bold;
 }
 
 .text-center {
