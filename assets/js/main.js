@@ -1,10 +1,44 @@
-$(document).ready(function() {
-jQuery.fn.spectragram.accessData = {
-    accessToken: '3236163376.1677ed0.de857991f0b84e90976780423d52341c'
-}
-});
+// $(document).ready(function() {
+// jQuery.fn.spectragram.accessData = {
+//     accessToken: '3236163376.1677ed0.de857991f0b84e90976780423d52341c'
+// }
+// });
+
 
 $(document).ready(function() {
+
+if ( $(window).width() > 480) { 
+// Parallax    
+function isInViewport(node) {
+    var rect = node.getBoundingClientRect()
+    return (
+        (rect.height > 0 || rect.width > 0) &&
+        rect.bottom >= 0 &&
+        rect.right >= 0 &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+    )
+    }
+    $(window).scroll(function() {
+    var scrolled = $(window).scrollTop()
+    $('.parallax').each(function(index, element) {
+        var initY = $(this).offset().top
+        var height = $(this).height()
+        var endY  = initY + $(this).height()
+    
+        // Check if the element is in the viewport.
+        var visible = isInViewport(this)
+        if(visible) {
+        var diff = scrolled - initY
+        var ratio = Math.round((diff / height) * 100)
+        $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px')
+        }
+    })
+    })
+};
+
+
+// Page scroll
 $('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
@@ -37,31 +71,14 @@ $(window).bind('scroll', function() {
 };
 
 
-// Animate the scroll to top
+// Scroll to top
 $('.back-to-top').click(function(event) {
     event.preventDefault();
     $('html, body').animate({scrollTop: 0}, 900);
 });
 
-$('.instagram').spectragram('getUserFeed', {
-    size: 'medium',
-    max: 6,
-    wrapEachWith: '<div class="grid-item"><div>'
-});
-});
 
-$(window).on('load', function() {
-$('.instagram').isotope({
-    itemSelector: '.grid-item',
-    isFitWidth: true,
-    layoutMode: 'masonry',
-    masonry: {
-      columnWidth: 110
-    },
-  }); 
-});
-
-$(document).ready(function() {
+// Autohide Header
 if ( $(window).width() < 480) { 
 // Hide Header on on scroll down
 var didScroll;
@@ -104,4 +121,16 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 }
+
+// Carousel
+$("#owl-one").owlCarousel({
+    items: 1,
+    singleItem: true,
+    dots: false,
+    nav: true,
+    loop: true
+});
+
+
+
 });
