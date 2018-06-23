@@ -7,7 +7,7 @@
 
 $(document).ready(function() {
 
-if ( $(window).width() > 480) { 
+if ( $(window).width() > 768) { 
 // Parallax    
 function isInViewport(node) {
     var rect = node.getBoundingClientRect()
